@@ -1,19 +1,9 @@
-Trong bối cảnh chuyển đổi số hiện nay, xu hướng mua sắm trực tuyến ngày càng
-trở nên phổ biến nhờ những ưu điểm nổi bật. Các sàn thương mại điện tử cho phép
-người dùng mua hàng mọi lúc, mọi nơi, hoạt động liên tục 24/7 mà không bị giới
-hạn bởi thời gian làm việc truyền thống. Đồng thời, dịch vụ giao hàng tận nơi góp
-phần giúp người mua tiết kiệm đáng kể thời gian và công sức. Bên cạnh đó, các
-nền tảng này cung cấp sự đa dạng về sản phẩm và dịch vụ, tạo điều kiện để người
-bán mở rộng hoạt động kinh doanh một cách nhanh chóng, linh hoạt và không bị
-giới hạn về mặt địa lý. Hệ thống sản phẩm phong phú trải rộng trên nhiều lĩnh vực,
-từ hàng tiêu dùng đến các dịch vụ chuyên biệt. Ngoài ra, tính tương tác cao giữa
-người dùng và hệ thống cho phép khách hàng dễ dàng đánh giá, nhận xét và tìm
-kiếm sản phẩm phù hợp với nhu cầu. Sàn thương mại điện tử cũng tích hợp nhiều
-tính năng quan trọng khác như bảo mật thông tin và thanh toán, các chương trình
-ưu đãi cạnh tranh, cùng với công cụ quản lý tài khoản và thống kê hiệu quả.
-Tổng thể, sàn thương mại điện tử không chỉ đơn thuần là một kênh giao dịch trực
-tuyến mà còn là một hệ thống tích hợp đa chức năng, đáp ứng nhu cầu ngày càng
-đa dạng của cả người mua lẫn người bán. Dựa trên cơ sở đó, nhóm tiến hành phân
-tích nghiệp vụ, thiết kế cơ sở dữ liệu và phát triển website nhằm quản lý các thông
-tin liên quan đến người dùng, sản phẩm, giỏ hàng, đơn hàng, thanh toán và vận
-chuyển.
+# E-Commerce Project
+
+## Introduction
+
+Sự phát triển mạnh mẽ của thương mại điện tử đặt ra yêu cầu cao về việc thiết kế một cơ sở dữ liệu có cấu trúc chặt chẽ, an toàn và tối ưu hóa hiệu năng truy vấn. Hệ thống lưu trữ thông tin cần xử lý tốt các luồng giao dịch đồng thời và đồng bộ thông tin thời gian thực giữa các thực thể người dùng, gian hàng, đơn hàng và đơn vị giao vận.
+
+Dự án E-Commerce Project được xây dựng nhằm thiết kế và tối ưu hóa cơ sở dữ liệu vật lý trên hệ quản trị PostgreSQL, đạt chuẩn hóa 3NF để giảm thiểu tối đa sự dư thừa và triệt tiêu các dị thường dữ liệu. Hệ thống hỗ trợ đầy đủ các nghiệp vụ thực tế như quản lý tài khoản phân quyền động, quản lý kho sản phẩm độc lập của từng cửa hàng, quy trình giỏ hàng, đặt hàng thanh toán bảo toàn thuộc tính ACID và điều phối shipper giao vận thời gian thực.
+
+Để kiểm chứng hiệu năng và tối ưu hóa ở tầng vật lý, nhóm đã áp dụng các chiến lược đánh chỉ mục B-Tree trên hệ thống khóa ngoại, chỉ mục phức hợp để tăng tốc bộ lọc kết hợp sắp xếp, chỉ mục GIN hỗ trợ tìm kiếm toàn văn và viết các trigger tự động cập nhật kho. Bên cạnh đó, nhóm đã xây dựng ứng dụng khách Client trực quan bằng ngôn ngữ Java Swing kết nối qua JDBC để mô phỏng thực tế quá trình vận hành của hệ thống, giúp mang lại cái nhìn trực quan và đánh giá chính xác hiệu năng của các câu lệnh SQL thực tế.
